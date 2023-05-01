@@ -1,0 +1,77 @@
+<html>
+<head>
+	<title >Temperature Converter</title>
+		<style>
+		
+			.container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 100px 500px;
+			border: 10px solid white;
+			background-color: #143F6B;
+			border-radius: 20px;
+			font-family: 'Archivo Black', sans-serif;
+			}
+
+			input[type=number] {
+			width: 100px;
+			margin-right: 5px;
+			
+			}
+
+			select {
+			margin-left: 5px;
+			margin-right: 10px;
+			}
+		
+			#convert-btn {
+			padding: 10px 15px;
+			cursor: pointer;
+			border-radius: 8px;
+			border: none;
+			background-color: #52734D;
+			color: #fff;
+			margin: 15px;
+			}
+	
+			#result {
+			margin-top: 20px;
+			font-size: 24px;			
+			}
+			
+			.designing{
+			padding: 10px;
+			line-height: 50px;
+			font-size: 18px;
+			border: 10px solid #ffffff;
+			background-color: #ffffff;
+			border-radius: 20px;
+			}
+		</style>
+	</head>
+<body align="center"bgcolor="E8F9FD">
+	<div class="container">
+		<h1><font color="#ffffff">Temperature Converter</font></h1>
+		
+		<div class="designing">
+		
+		<label for="unit">Select Unit:</label>
+		<select id="unit">
+			<option value="celsius" >Celsius</option>
+			<option value="fahrenheit">Fahrenheit</option>
+		</select></br>
+		
+		<label for="temperature">Enter the Temperature:</label>
+		<input type="number" id="temperature" placeholder="Enter value"></br>
+
+		<button id="convert-btn"><b>Convert</button>
+		
+		</div>
+		<div id="result"></div>
+		
+	</div>
+	<script src="unit_convertor_JS.js"></script>
+</body>
+</html>
+
