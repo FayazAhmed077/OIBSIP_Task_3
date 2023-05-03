@@ -4,6 +4,7 @@ const unitSelect = document.getElementById("unit");
 const resultDiv = document.getElementById("result");
 
 convertBtn.addEventListener("click", () => {
+  
   const temperature = temperatureInput.value;
   const unit = unitSelect.value;
   let convertedTemperature;
